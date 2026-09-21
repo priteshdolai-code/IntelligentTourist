@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            background-image: url('photos/laksha1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: auto; /* Enable scrolling for overflow content */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin-top: 10px;
+            font-size: 36px;
+            color: #0a3612;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1000px; 
+            margin: 0 auto; 
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box; 
+        }
+
+        .photo{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; 
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 20px auto;
+            object-fit: cover;
+        }
+
+        .itinerary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.itinerary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.itinerary li {
+    margin-bottom: 10px;
+    padding: 5px 0; /* Added padding for cost */
+    border-bottom: 1px solid #ccc; /* Added border bottom for separation */
+}
+
+.itinerary li:last-child {
+    border-bottom: none; /* Remove border bottom from last item */
+}
+
+.itinerary li strong {
+    color: #007bff;
+}
+
+.cost {
+    float: right; /* Align cost to the right */
+    color: green; /* Change cost color to indicate it's cheap */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <main>
+            <header>
+                <h1>Explore Lakshadweep: A Journey Through India's Jewel</h1>
+            </header>
+            <p>Welcome to Lakshadweep, where pristine beaches, turquoise waters, and vibrant marine life await you for an unforgettable island getaway.</p>
+            <div class="photo">
+                <img src="photos/laksha2.webp"  class="image">
+                <img src="photos/laksha3.jpeg"  class="image">
+                <img src="photos/laksha4.jpg"  class="image">
+                <img src="photos/laksha5.avif"  class="image">
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2011860.7433507554!2d71.61281225250532!3d9.982494085444463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b9fcd65cae4973d%3A0x17bd7416842ce9aa!2sLakshadweep!5e0!3m2!1sen!2sin!4v1710255587790!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            <div class="itinerary">
+                <h2>Itinerary per person</h2>
+                <ul>
+                    <li>
+                        <strong>Day 1:</strong> Arrival in Lakshadweep
+                        <span class="cost">₹6000</span>
+                    </li>
+                    <li>
+                        <strong>Day 2:</strong> Explore Agatti Island - Visit Agatti Beach, Agatti Island Lagoon
+                        <span class="cost">₹8000</span>
+                    </li>
+                    <li>
+                        <strong>Day 3:</strong> Bangaram Island Excursion - Enjoy water sports, relax on the beach
+                        <span class="cost">₹10000</span>
+                    </li>
+                    <li>
+                        <strong>Day 4:</strong> Kavaratti Island Tour - Explore Kavaratti Beach, Ujra Mosque
+                        <span class="cost">₹9000</span>
+                    </li>
+                    <li>
+                        <strong>Day 5:</strong> Kalpeni Island Discovery - Snorkeling, Kalpeni Beach
+                        <span class="cost">₹8500</span>
+                    </li>
+                    <li>
+                        <strong>Day 6:</strong> Departure from Lakshadweep
+                        <span class="cost">₹6000</span>
+                    </li>
+                </ul>
+                <button type="button" class="btn" onclick="bookNow()">BOOK NOW</button>
+            </div>
+        </main>
+            
+    </div>
+    <script>
+        function bookNow() {
+            // Redirect to the desired webpage
+            window.location.href = 'bookTour.html';
+        }
+    </script>
+</body>
+</html>

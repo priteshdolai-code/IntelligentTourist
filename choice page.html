@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="choice page.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">INTELLIGENT TOURIST</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="startPage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog page.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photogallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- customize tour -->
+      <div class="custom-tour-section">
+        <h2 style="color: white;">Customize Your Tour</h2>
+        <a href="customize.html">
+            <button id="customize-btn">START CUSTOMIZING</button>
+        </a>
+      </div>
+    
+
+      <!-- Predefined Tour Cards Section -->
+      <div class="tour-cards-section container mt-5">
+        <h2>PLAN AS PER BEST DESTINATIONS IN INDIA</h2>
+    
+        <div class="row">
+      
+            <!-- card 1 rajasthan-->
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="photos/rajasthan1.jpg" class="card-img-top" alt="Tour 2 Image">
+          <div class="card-body">
+            <h5 class="card-title">RAJASTHAN</h5>
+            <p class="card-text">Rajasthan, "Land of Kings," boasts majestic forts, opulent palaces, and vibrant bazaars amidst the golden sands of the Thar Desert. Its cities like Jaipur, Udaipur, and Jaisalmer enchant with rich history, colorful festivals, and Rajasthani hospitality, offering a royal tapestry of culture and architecture.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal1">DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal for Tour 1 -->
+    <div class="modal fade" id="tourModal1" tabindex="-1" role="dialog" aria-labelledby="tourModal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourModal1Label">RAJASTHAN TOUR DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="photos/rajasthan2.gif" alt="Europe Image">
+                    <h2>Rajasthan Trip Itinerary</h2>
+
+    <h3>7 Days Rajasthan</h3>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Expense (INR)</th>
+        </tr>
+        <tr>
+            <td>Accommodation (6 nights)</td>
+            <td>12,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Activities</td>
+            <td>10,000 INR</td>
+        </tr>
+
+        <tr>
+            <td>Meals</td>
+            <td>8,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Transportation</td>
+            <td>19,000 INR</td>
+        </tr>
+        <tr>
+            <td>Miscellaneous</td>
+            <td>12,000 INR</td>
+        </tr>
+
+       
+        <tr>
+            <td><strong>Total Cost for Rajasthan</strong></td>
+            <td><strong>Approx. 62,000 INR</strong></td>
+        </tr>
+    </table>
+
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 2 kerala-->
+
+    <div class="col-md-4">
+        <div class="card">
+          <img src="photos/kerala1.jpg" class="card-img-top" alt="Tour 2 Image">
+          <div class="card-body">
+            <h5 class="card-title">KERALA</h5>
+            <p class="card-text">Kerala, "God's Own Country," is a serene paradise of lush backwaters, tranquil beaches, and misty hill stations. From the tranquil backwaters of Alleppey to the tea-covered hills of Munnar, Kerala's natural beauty, and vibrant culture create an enchanting tapestry for travelers seeking rejuvenation.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal2">DETAILS</a>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Modal for Tour 2 -->
+    <div class="modal fade" id="tourModal2" tabindex="-1" role="dialog" aria-labelledby="tourModal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourModal1Label">KERALA TOUR DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="photos/kerala2.webp" alt="Europe Image">
+                 
+                    <h2>Kerala Trip Itinerary</h2>
+
+    <h3>7 Days Kerala</h3>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Expense (INR)</th>
+        </tr>
+        <tr>
+            <td>Accommodation (4 nights)</td>
+            <td>10,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Activities</td>
+            <td>14,000 INR</td>
+        </tr>
+
+        <tr>
+            <td>Meals</td>
+            <td>9,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Transportation</td>
+            <td>10,500 INR</td>
+        </tr>
+        <tr>
+            <td>Miscellaneous</td>
+            <td>7,000 INR</td>
+        </tr>
+
+       
+        <tr>
+            <td><strong>Total Cost for Kerala</strong></td>
+            <td><strong>Approx. 51,500 INR</strong></td>
+        </tr>
+    </table>
+
+    
+
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 3 Uttarakhand-->
+    <div class="col-md-4">
+        <div class="card">
+          <img src="photos/uttar1.jpg" class="card-img-top" alt="Tour 3 Image">
+          <div class="card-body">
+            <h5 class="card-title">UTTARAKHAND</h5>
+            <p class="card-text">Uttarakhand, nestled in the lap of the Himalayas, beckons with its pristine forests, holy rivers, and scenic hill stations. From the spiritual aura of Rishikesh to the breathtaking vistas of Nainital and Mussoorie, Uttarakhand's natural beauty, adventure sports, and spiritual retreats offer a sanctuary for the soul.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal3">DETAILS</a>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Modal for Tour 3 -->
+    <div class="modal fade" id="tourModal3" tabindex="-1" role="dialog" aria-labelledby="tourModal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourModal3Label">UTTARAKHAND TOUR DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="photos/uttar2.jpg" alt="Europe Image">
+                 
+                    <h2>Uttarakhand Trip Itinerary</h2>
+
+    <h3>7 Days Uttarakhand</h3>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Expense (INR)</th>
+        </tr>
+        <tr>
+            <td>Accommodation ( 10 nights)</td>
+            <td>32,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Activities</td>
+            <td>24,000 INR</td>
+        </tr>
+
+        <tr>
+            <td>Meals</td>
+            <td>22,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Transportation</td>
+            <td>19,500 INR</td>
+        </tr>
+        <tr>
+            <td>Miscellaneous</td>
+            <td>25,000 INR</td>
+        </tr>
+
+       
+        <tr>
+            <td><strong>Total Cost for Uttarakhand</strong></td>
+            <td><strong>Approx. 1,20,000 INR</strong></td>
+        </tr>
+    </table>
+
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- card 4 goa-->
+    <div class="col-md-4">
+        <div class="card">
+          <img src="photos/goa1.jpg" class="card-img-top" alt="Tour 4 Image">
+          <div class="card-body">
+            <h5 class="card-title">GOA</h5>
+            <p class="card-text">Goa, with its sun-kissed beaches, vibrant nightlife, and Portuguese heritage, offers a unique blend of relaxation and revelry. From the historic charm of Old Goa to the lively shores of Baga and Calangute, Goa's laid-back vibe, water sports, and seafood delights captivate travelers seeking a tropical escape.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal4">DETAILS</a>
+          </div>
+        </div>
+      </div>
+    
+
+    
+
+    <!-- Modal for Tour 4 -->
+    <div class="modal fade" id="tourModal4" tabindex="-1" role="dialog" aria-labelledby="tourModal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourModal4Label">GOA TOUR DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="photos/goa2.jpg" alt="Europe Image">
+                 
+                    <h2>Goa Trip Itinerary</h2>
+
+    <h3>3 Days Goa</h3>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Expense (INR)</th>
+        </tr>
+        <tr>
+            <td>Accommodation (6 nights)</td>
+            <td>9,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Activities</td>
+            <td>5,000 INR</td>
+        </tr>
+
+        <tr>
+            <td>Meals</td>
+            <td>4,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Transportation</td>
+            <td>4,500 INR</td>
+        </tr>
+        <tr>
+            <td>Miscellaneous</td>
+            <td>5,000 INR</td>
+        </tr>
+
+       
+        <tr>
+            <td><strong>Total Cost for Goa</strong></td>
+            <td><strong>Approx. 28,500 INR</strong></td>
+        </tr>
+    </table>
+
+    
+
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- card 5 gujarat-->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="photos/gujarat1.jpg" class="card-img-top" alt="Tour 5 Image">
+      <div class="card-body">
+        <h5 class="card-title">GUJARAT</h5>
+        <p class="card-text">Gujarat, a land of rich history and vibrant culture, enthralls with its architectural marvels, and delectable cuisine. From the intricate carvings of Modhera Sun Temple to the bustling streets of Ahmedabad, Gujarat's heritage, and warm hospitality offer a memorable journey through time and tradition.</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal5">DETAILS</a>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal for Tour 5 -->
+    <div class="modal fade" id="tourModal5" tabindex="-1" role="dialog" aria-labelledby="tourModal5Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourModal5Label">GUJARAT TOUR DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="photos/gujarat2.webp" alt="Europe Image">
+                 
+                    <h2>Gujarat Trip Itinerary</h2>
+
+    <h3>5 Days Gujarat</h3>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Expense (INR)</th>
+        </tr>
+        <tr>
+            <td>Accommodation (6 nights)</td>
+            <td>11,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Activities</td>
+            <td>3,000 INR</td>
+        </tr>
+
+        <tr>
+            <td>Meals</td>
+            <td>4,500 INR</td>
+        </tr>
+
+        <tr>
+            <td>Transportation</td>
+            <td>6,500 INR</td>
+        </tr>
+        <tr>
+            <td>Miscellaneous</td>
+            <td>10,000 INR</td>
+        </tr>
+
+       
+        <tr>
+            <td><strong>Total Cost for Gujarat</strong></td>
+            <td><strong>Approx. 35,500 INR</strong></td>
+        </tr>
+    </table>
+
+    
+
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- card 6 tamil nadu -->
+
+    <div class="col-md-4">
+        <div class="card">
+          <img src="photos/tamil nadu1.jpg" class="card-img-top" alt="Tour 6 Image">
+          <div class="card-body">
+            <h5 class="card-title">TAMIL NADU</h5>
+            <p class="card-text">Tamil Nadu, steeped in ancient heritage and Dravidian culture, mesmerizes with its magnificent temples, and scenic landscapes. From the towering gopurams of Madurai to the serene beaches of Mahabalipuram, Tamil Nadu's architectural wonders, and culinary delights create a sensory feast for travelers.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal6">DETAILS</a>
+          </div>
+        </div>
+      </div>
+   
+
+    <!-- Modal for Tour 6-->
+    <div class="modal fade" id="tourModal6" tabindex="-1" role="dialog" aria-labelledby="tourModal6Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tourModal6Label">TAMIL NADU TOUR DETAILS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="photos/tamil nadu2.cms" alt="Europe Image">
+                    
+                    <h2>Tamil Nadu Trip Itinerary</h2>
+
+                    <h3>7 Days Tamil Nadu</h3>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Expense (INR)</th>
+                        </tr>
+                        <tr>
+                            <td>Accommodation (6 nights)</td>
+                            <td>15,500 INR</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Activities</td>
+                            <td>5,000 INR</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Meals</td>
+                            <td>9,500 INR</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Transportation</td>
+                            <td>19,500 INR</td>
+                        </tr>
+                        <tr>
+                            <td>Miscellaneous</td>
+                            <td>7,000 INR</td>
+                        </tr>
+                
+                       
+                        <tr>
+                            <td><strong>Total Cost for Tamil Nadu</strong></td>
+                            <td><strong>Approx. 56,500 INR</strong></td>
+                        </tr>
+                    </table>
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- how it works -->
+    <p style="font-size:40px;">HOW IT WORKS?</p>
+    <div class="how-it-works">
+        <div class="step">
+          <img src="photos/step1.png" alt="Step 1">
+          <h3>Enter Details & Preferences</h3>
+          <p>Provide your preferences and details to determine the state of your destination.</p>
+        </div>
+        <div class="step">
+          <img src="photos/step2.avif" alt="Step 2">
+          <h3>Enter Family Details</h3>
+          <p>Enter details of your family, number of days you plan to stay, etc.</p>
+        </div>
+        <div class="step">
+          <img src="photos/step3.jpg" alt="Step 3">
+          <h3>Book Tour</h3>
+          <p>Book your desired tour package based on your preferences and family details.</p>
+        </div>
+        <div class="step">
+          <img src="photos/step4.jpg" alt="Step 4">
+          <h3>Regenerate</h3>
+          <p>Re-evaluate your preferences and details, and regenerate your tour options if needed.</p>
+        </div>
+      </div>
+      
+    <!-- video section -->
+
+      <div class="video-section">
+        <video autoplay loop muted playsinline poster="background-poster.jpg">
+          <source src="videos/production_id_4039113 (1080p).mp4" type="video/mp4"> 
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <h2>BEST TO VISIT IN 2024</h2>
+      </div>
+<div>
+    <br>
+    <!-- why choose us -->
+
+<p style="font-size:40px;">WHY CHOOSE INTELLIGENT TOURIST?</p>
+    <section class="plan-with-us">
+        <div class="point">
+          <img src="photos/expert_advice.jpg" alt="Point 1">
+          <h3>Expert Advice</h3>
+          <p>Our experienced team provides personalized guidance and expert advice tailored to your needs.</p>
+        </div>
+        <div class="point">
+          <img src="photos/customize_tour.webp" alt="Point 2">
+          <h3>Customized Packages</h3>
+          <p>We offer customizable packages to ensure your trip meets your preferences and budget.</p>
+        </div>
+        <div class="point">
+          <img src="photos/24_7_support.avif" alt="Point 3">
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is available round-the-clock to assist you at every step of your journey.</p>
+        </div>
+        <div class="point">
+          <img src="photos/local.jpg" alt="Point 4">
+          <h3>Local Experience</h3>
+          <p>Benefit from our extensive local knowledge and insider tips for a truly immersive experience.</p>
+        </div>
+        <div class="point">
+          <img src="photos/seamless_booking.jpg" alt="Point 5">
+          <h3>Seamless Booking</h3>
+          <p>Enjoy hassle-free booking with our user-friendly platform and secure payment options.</p>
+        </div>
+        <div class="point">
+          <img src="photos/customer_satisfaction.jpg" alt="Point 6">
+          <h3>Customer Satisfaction</h3>
+          <p>Your satisfaction is our priority. We go the extra mile to ensure you have a memorable and enjoyable trip.</p>
+        </div>
+      </section>
+      
+</div>
+      <div class="description">
+        <img class="imagedes" src="photos/des.jpg" alt="Image">
+  
+        <div class="img-description">
+            <p>"Welcome to Intelligent Tourist, where we redefine the art of vacation planning by introducing a revolutionary feature that puts your preferences at the forefront of your travel experience. Our platform goes beyond traditional booking services, employing cutting-edge technology to analyze your unique travel profile. As a registered user, you have the power to input your travel preferences, be it a preference for scenic landscapes, historical sites, or adrenaline-pumping adventures. Leveraging the prowess of machine learning algorithms, we delve into your past travel history and preferences to craft a personalized profile that encapsulates your distinct tastes.
+
+               <p> Picture this: a travel experience tailored exclusively to you. Our system then meticulously sifts through our vast array of destinations, activities, and accommodations to present you with a curated list of vacation places perfectly aligned with your individual desires. Whether you're yearning for the serenity of a secluded beach, the rich cultural tapestry of a historic city, or the thrill of an off-the-beaten-path adventure, our recommendations promise to transform your dreams into reality.</p>
+                
+               <p> This feature not only saves you valuable time that would be spent on endless research but also elevates your travel experience by ensuring that each destination resonates with your passions. Expect to be pleasantly surprised as our recommendations may unveil hidden gems and exclusive experiences, adding an extra layer of excitement to your journey.</p>
+                
+               <p> At Intelligent Tourist, we believe that your dream vacation should be as unique as you are. Let us be your personal travel concierge, guiding you towards a world of personalized and unforgettable journeys tailored to your preferences. Your perfect adventure awaits – start your journey with us today."</p>
+        </div>
+
+      </div>
+
+
+
+      
+
+    <!-- Copyright section -->
+        </div>
+      </div>
+      <div class="copyright-section">
+        <p>&copy; 2024 INTELLIGENT TOURIST. All rights reserved.</p>
+    </div>
+
+    <script>
+        function bookNow() {
+            // Redirect to the desired webpage
+            window.location.href = 'bookTour.html';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

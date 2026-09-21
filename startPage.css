@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+body {
+    background: url(photos/startBG.webp) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center top; /* Adjusted background positioning */
+    /* background: #010718; */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* overflow: hidden; */ /* Removed overflow property */
+}
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0e2030;
+    font-size: 44px;
+    font-weight: bold;
+    height: 100vh;
+    top: -2%; /* Adjust the top value to move it to the top */
+    width: 100%;
+    position: absolute;
+}
+.tagline-container {
+    text-align: center;
+    position: absolute; /* Add position absolute to fix the position */
+    top: 55%; /* Adjust the top value based on your preference */
+    width: 100%;
+}
+
+.tagline {
+    color: #010d1f;
+    font-size: 24px;
+}
+
+#get-started-btn {
+    background-color: #4288b7;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#typed-text::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px; /* Add some space after the text */
+    animation: blink-caret 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+

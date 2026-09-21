@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Itinerary</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .card-container {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-back {
+    background-color: #f9f9f9;
+    transform: rotateY(180deg);
+    display: none;
+    padding: 20px;
+  }
+  
+  .card-back.show {
+    display: block;
+  }
+  
+  .tour-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-front">
+      <img src="your_photo.jpg" alt="Tour Photo" style="width: 100%; max-height: 200px;">
+      <div>
+        <h3>Tour Information</h3>
+        <p>Place: Destination</p>
+        <p>Date: Date Range</p>
+        <button class="tour-button" onclick="showItinerary()">Check Itinerary</button>
+      </div>
+    </div>
+    <div class="card-back">
+      <h3>Tour Itinerary</h3>
+      <ul>
+        <li>Day 1: Activity 1</li>
+        <li>Day 2: Activity 2</li>
+        <li>Day 3: Activity 3</li>
+        <!-- Add more itinerary items as needed -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showItinerary() {
+    document.querySelector('.card').classList.toggle('flipped');
+    document.querySelector('.card-back').classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
+

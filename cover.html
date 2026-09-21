@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="cover.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="name">
+      <div class="plane">
+        <img src="photos/result.png" height="270px" width="450px" />
+      </div>
+      <div class="text-container">
+        <span class="text" id="animatedText">Intelligent Tourist</span>
+      </div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        document.querySelector('.plane').style.display = 'none';
+        document.getElementById('animatedText').classList.add('show-text');
+    
+        setTimeout(function () {
+          window.location.href = "startPage.html";
+        }, 1000); // Adjust the duration as needed
+      }, 4000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            background-image: url('photos/andhra1.avif');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: auto; /* Enable scrolling for overflow content */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin-top: 10px;
+            font-size: 36px;
+            color: #0a3612;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1000px; 
+            margin: 0 auto; 
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box; 
+        }
+
+        .photo{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; 
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 20px auto;
+            object-fit: cover;
+        }
+
+        .itinerary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.itinerary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.itinerary li {
+    margin-bottom: 10px;
+    padding: 5px 0; /* Added padding for cost */
+    border-bottom: 1px solid #ccc; /* Added border bottom for separation */
+}
+
+.itinerary li:last-child {
+    border-bottom: none; /* Remove border bottom from last item */
+}
+
+.itinerary li strong {
+    color: #007bff;
+}
+
+.cost {
+    float: right; /* Align cost to the right */
+    color: green; /* Change cost color to indicate it's cheap */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <main>
+            <header>
+                <h1>Explore Andhra Pradesh: A Journey Through India's Jewel</h1>
+            </header>
+            <p>Welcome to Andhra Pradesh, where every corner is a celebration of rich culture, stunning landscapes, and delicious cuisine.</p>
+            <div class="photo">
+                <img src="photos/andhra.2.jpg" alt="Andhra Image" class="image">
+                <img src="photos/andhra3.jpg" alt="Andhra Image" class="image">
+                <img src="photos/andhra4.webp" alt="Andhra Image" class="image">
+                <img src="photos/andhra5.jpg" alt="Andhra Image" class="image">
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929667.0932036685!2d78.11889230774108!3d15.879416767232813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3546f8ae93d47f%3A0x33d1bbbe95adcd83!2sAndhra%20Pradesh!5e0!3m2!1sen!2sin!4v1709992705585!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            <div class="itinerary">
+                <h2>Itinerary per person</h2>
+                <ul>
+                    <li>
+                        <strong>Day 1:</strong> Arrival in Visakhapatnam
+                        <span class="cost">₹5000</span>
+                    </li>
+                    <li>
+                        <strong>Day 2:</strong> Explore Visakhapatnam - Visit Kailasagiri, Rama Krishna Beach, and Submarine Museum
+                        <span class="cost">₹2000</span>
+                    </li>
+                    <li>
+                        <strong>Day 3:</strong> Visit Araku Valley - Explore the coffee plantations
+                        <span class="cost">₹4000</span>
+                    </li>
+                    <li>
+                        <strong>Day 4:</strong> Travel to Vijayawada - Undavalli Caves, Kanaka Durga Temple
+                        <span class="cost">₹7000</span>
+                    </li>
+                    <li>
+                        <strong>Day 5:</strong> Explore Amaravati - Visit Amaravati Stupa and Museum
+                        <span class="cost">₹1000</span>
+                    </li>
+                    <li>
+                        <strong>Day 6:</strong> Visit Tirupati - Seek blessings at Tirumala Venkateswara Temple
+                        <span class="cost">₹1000</span>
+                    </li>
+                    <li>
+                        <strong>Day 7:</strong> Departure from Visakhapatnam
+                        <span class="cost">₹2000</span> 
+                    </li>
+                </ul>
+                <button type="button" class="btn" onclick="bookNow()">BOOK NOW</button>
+            </div>
+        </main>
+            
+    </div>
+    <script>
+        function bookNow() {
+            // Redirect to the desired webpage
+            window.location.href = 'bookTour.html';
+        }
+    </script>
+</body>
+</html>

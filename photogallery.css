@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#D6EAF8;
+    
+  }
+
+  .copyright-section {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    
+}
+
+ h2 {
+      text-align: center;
+    }
+  .traveler-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.traveler-photo img {
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 40px;   
+}
+
+.instagram-handle {
+    color: #fff;
+    font-size: 1 em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.feedback-container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #D6EAF8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.feedback-item {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(234, 234, 225);
+  border: 1px solid rgb(234, 234, 225);
+  border-radius: 5px;
+}
+
+.feedback-item h3 {
+  margin-bottom: 5px;
+}
+
+.feedback-item p {
+  margin: 0;
+}
+
+
+/* tourist tour */
+.tourist-comment {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.tourist-comment img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.comment {
+  flex-grow: 1;
+}
+
+.comment p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.comment span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.see-tour-btn {
+  background-color: #3498db; /* Blue */
+  color: #fff; /* White */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-tour-btn:hover {
+  background-color: #2980b9; /* Darker Blue */
+}
+
+/* star rating */
+.star-rating {
+  font-size: 24px;
+}
+
+.star {
+  color: gold;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Ensure it's above other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto; /* Center the modal vertically and start near the top */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust the width of the modal content */
+  max-width: 600px; /* Limit the maximum width of the modal content */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content img {
+  object-fit: cover;
+  max-width: 500px; /* Ensure the image doesn't exceed the modal width */
+  height: 350px; /* Maintain aspect ratio */
+  display: block; /* Ensure the image is centered within the modal */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 8px; /* Add border radius if needed */
+}
