@@ -18,9 +18,10 @@ def predict_intent():
     predicted_intent = request_data.get('intent')
 
     # Initialize the CLU client with your Azure CLU API credentials
-    clu_endpoint = "https://intelllang.cognitiveservices.azure.com/"
-    clu_key = "283134932e964201bce04e1af99ae71c"
-    project_name = "IntellTour"
+    import os
+    clu_endpoint = os.environ["CLU_ENDPOINT"]
+    clu_key      = os.environ["CLU_KEY"]
+    project_name = os.environ.get("CLU_PROJECT", "IntellTour")
     deployment_name = "IntellTour"
     clu_client = ConversationAnalysisClient(clu_endpoint, AzureKeyCredential(clu_key))
 
